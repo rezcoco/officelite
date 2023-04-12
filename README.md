@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/officelite-coming-soon-site-U8-lhXA0wb)
 - Live Site URL: [Github Pages](https://rezcoco.github.io/officelite/)
 
 ## My process
