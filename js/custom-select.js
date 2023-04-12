@@ -17,6 +17,7 @@ selectOption.forEach((select) => {
         selectOption.forEach((checklist) => checklist.classList.remove('selected'))
         this.classList.add('selected')
         selectHidden.classList.toggle('active')
+        arrow.classList.toggle('rotate')
         selectedPlan.textContent = this.childNodes[1].childNodes[1].innerText
         selectedPrice.textContent =  this.childNodes[1].childNodes[3].innerText
 
