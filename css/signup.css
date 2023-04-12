@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Kumbh Sans',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+:root {
+    --blue: #5175ff;
+    --light-blue: #829cff;
+    --lighter-dark: #333950;
+    --dark: #25293a;
+    --grey: #747b95;
+    --danger: #f05b5b; 
+
+    --box-shadow: 0 1rem 2rem rgba(132, 139, 200, 0.3);
+}
+
+.ctr {
+    max-width: 69.25rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.h-56-xl {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.h-20-l {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.h-16-m {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bd1-18 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.bd2-16 {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.btn-blue {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: fit-content;
+    height: fit-content;
+    background: var(--blue);
+    padding: 1.1em 2.3em;
+    border-radius: 28px;
+    box-shadow: var(--box-shadow);
+    transition: .3s;
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background: var(--light-blue);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    background: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+/* PARENT */
+.bg {
+    min-height: 100%;
+    position: relative;
+}
+
+.bg::after {
+    content: "";
+    position: absolute;
+    background-image: url(../assets/sign-up/bg-pattern-side.svg);
+    background-color: var(--dark);
+    height: 100%;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* background-size: 127.25rem 127.255rem; */
+    background-position: 48% 62%;
+    background-repeat: no-repeat;
+}
+
+/* HEADER */
+
+.logo {
+    padding: 3.5rem 0;
+}
+
+/* HERO */
+.hero-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0;
+}
+
+.hero-text {
+    max-width: 34.75rem;
+}
+
+.hero-text > p {
+    margin: 24px 0 56px 0;
+    color: var(--grey);
+}
+
+.form-ctr {
+    color: grey;
+    padding: 2.5rem 2.4rem;
+    width: 27.8125rem;
+    height: 508px;
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: var(--box-shadow);
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-wrap input, .custom-select {
+    z-index: 1;
+    width: 100%;
+    padding: .7rem;
+    line-height: 2.8rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.input-wrap.alert {
+    border-bottom: 1px solid var(--danger);
+}
+
+input::placeholder, .custom-select span {
+    font-size: 16px;
+    opacity: 1;
+    color: #9ca3af;
+}
+
+.error {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+/* CUSTOM SELECT */
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select-arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.custom-select-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.plan {
+    font-weight: 700;
+}
+
+.plan > span:first-child{
+    color: var(--lighter-dark);
+}
+
+.custom-select-hidden {
+    display: none;
+}
+
+.custom-select-hidden.active {
+    position: absolute;
+    left: 0;
+    top: 115%;
+    z-index: 99;
+    width: 100%;
+    display: block;
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+    line-height: 3.6rem;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, .747077);
+    background: #fff;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.custom-select-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-select-option:not(.custom-select-option:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.custom-select-option .checklist {
+    display: none;
+}
+
+.custom-select-option.selected .checklist {
+    display: block;
+}
+
+.custom-select-price-display, .custom-select-price {
+    margin-left: 10px;
+}
+
+.s-btn {
+    margin-top: 24px;
+    width: 100%;
+}
+
+
+.i-date {
+    letter-spacing: 5px;
+    margin-bottom: 24px;
+}
+
+.date {
+    color: var(--blue);
+}
+
+.countdown-time {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.time {
+    min-width: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #e4eaff;
+    text-align: center;
+}
+
+.time h1 {
+    color: var(--blue);
+}
+
+.time p {
+    color: #999cab;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .bg::after {
+        width: 100%;
+        height: 380px;
+        background-position: center center;
+        background-size: 120rem;
+        bottom: 0;
+    }
+
+    .ctr {
+        margin: 0 4rem;
+    }
+
+    .hero-signup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-text > h1 {
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    .hero-text > p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .countdown {
+        text-align: center;
+        margin-bottom: 5.25rem;
+    }
+    .countdown-time {
+        justify-content: center;
+    }
+
+    .form-ctr {
+        transform: translateY(2rem);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .bg::after {
+        background-size: 100rem;
+    }
+    .form-ctr {
+        transform: translateY(-50px);
+    }
+
+    .countdown {
+        margin-bottom: 10.25rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        background-image: url(../assets/home/bg-pattern-header.svg);
+        background-repeat: no-repeat;
+        background-position: center -9rem;
+        background-size: 30rem;
+        position: relative;
+    }
+
+    .ctr {
+        margin: 0 2rem;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-text {
+        max-width: 327px;
+    }
+
+    .form-ctr {
+        width: 327px;
+    }
+
+    .time {
+        min-width: 72px;
+        height: 92px;
+    }
+
+    .time h1 {
+        font-size: 32px;
+        line-height: unset;
+    }
+}

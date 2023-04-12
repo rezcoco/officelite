@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/signup.css">
+  <title>Frontend Mentor | Officelite coming soon site</title>
+</head>
+<body>
+  <div class="bg">
+    <div class="content">
+      <header class="ctr logo">
+        <a href="#">
+          <img src="../assets/shared/logo.svg" alt="logo">
+        </a>
+      </header>
+      <main>
+        <section class="ctr hero-signup">
+          <div class="hero-text">
+            <h1 class="h-56-xl">Work smarter. Save time.</h1>
+            <p class="bd1-18">Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+            <div class="countdown">
+              <h3 class="h-16-m i-date">COMING <span class="date">21 MARCH 2023</span></h3>
+              <div class="countdown-time">
+                <div class="time">
+                  <h1 class="h-56-xl" id="day">00</h1>
+                  <p class="bd2-16">days</p>
+                </div>
+                <div class="time">
+                  <h1 class="h-56-xl" id="hour">00</h1>
+                  <p class="bd2-16">hours</p>
+                </div>
+                <div class="time">
+                  <h1 class="h-56-xl" id="min">00</h1>
+                  <p class="bd2-16">min</p>
+                </div>
+                <div class="time">
+                  <h1 class="h-56-xl" id="sec">00</h1>
+                  <p class="bd2-16">sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-ctr">
+            <form action="">
+              <div class="input-ctr">
+                <div class="input-wrap">
+                  <label class="bd2-16" for="name"></label>
+                  <input type="text" name="name" id="name" placeholder="Name" required>
+                </div>
+                <div class="input-wrap">
+                  <label class="bd2-16" for="email"></label>
+                  <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-wrap custom-select">
+                  <div class="custom-select-display">
+                    <div class="plan">
+                      <span class="custom-select-text-display">Basic Pack</span>
+                      <span class="custom-select-price-display">Free</span>
+                    </div>
+                    <span class="custom-select-arrow"><img src="../assets/sign-up/icon-arrow-down.svg" alt="arrow"></span>
+                  </div>
+                  <div class="custom-select-hidden">
+                    <div class="custom-select-option selected" data-value="basic">
+                      <div class="plan">
+                        <span class="custom-select-text">Basic Pack</span>
+                        <span class="custom-select-price">Free</span>
+                      </div>
+                      <span class="checklist"><img src="../assets/sign-up/icon-check.svg" alt="checklist"></span>
+                    </div>
+                    <div class="custom-select-option" data-value="pro">
+                      <div class="plan">
+                        <span class="custom-select-text">Pro Pack</span>
+                        <span class="custom-select-price">$9.99</span>
+                      </div>
+                      <span class="checklist"><img src="../assets/sign-up/icon-check.svg" alt="checklist"></span>
+                    </div>
+                    <div class="custom-select-option" data-value="ultimate">
+                      <div class="plan">
+                        <span class="custom-select-text">Ultimate Pack</span>
+                        <span class="custom-select-price">$19.99</span>
+                      </div>
+                      <span class="checklist"><img src="../assets/sign-up/icon-check.svg" alt="checklist"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label class="bd2-16" for="phone"></label>
+                  <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="input-wrap">
+                  <label class="bd2-16" for="company"></label>
+                  <input type="text" name="company" id="company" placeholder="Company">
+                </div>
+              </div>
+              <button class="btn-blue s-btn" type="submit">Get on the List</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+  <script src="../js/custom-select.js"></script>
+  <script src="../js/validation.js"></script>
+</body>
+</html>

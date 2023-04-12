@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Kumbh Sans',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+:root {
+    --blue: #5175ff;
+    --light-blue: #829cff;
+    --lighter-dark: #333950;
+    --dark: #25293a;
+    --grey: #747b95;
+    --danger: #f05b5b; 
+
+    --box-shadow: 0 1rem 2rem rgba(132, 139, 200, 0.3);
+}
+
+.ctr {
+    max-width: 69.25rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* .__pad-inline {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+} */
+
+.h-56-xl {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.h-20-l {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.h-16-m {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bd1-18 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.bd2-16 {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+body {
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+.btn-blue {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: fit-content;
+    height: fit-content;
+    background: var(--blue);
+    padding: 1.1em 2.3em;
+    border-radius: 28px;
+    box-shadow: var(--box-shadow);
+    transition: .3s;
+}
+.btn-blue:hover {
+    color: #fff;
+    background: var(--light-blue);
+}
+
+.btn-lg-blue {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 700;
+    background: #e4eaff;
+    padding: 1.1em 2.3em;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 28px;
+    transition: .3s;
+}
+.btn-lg-blue:hover {
+    color: var(--blue);
+    background: #d3dcff;
+}
+
+.btn-white {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 700;
+    background: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 1.1em 2.3em;
+    border-radius: 28px;
+    transition: .3s;
+}
+
+.btn-white:hover {
+    color: var(--light-blue);
+}
+
+/* WRAPPER */
+
+.app {
+    overflow: hidden;
+}
+
+.home {
+    background-image: url(../assets/home/bg-pattern-header.svg);
+    background-repeat: no-repeat;
+    background-position: 660px -30rem;
+    position: relative;
+}
+
+/* HEADER */
+.logo {
+    padding: 3.5rem 0;
+    display: block;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hero .hero-headline {
+    max-width: 540px;
+    padding: 6% 0;
+}
+
+.hero .hero-headline p {
+    margin: 32px 0 40px 0;
+    color: var(--grey);
+}
+
+/* PRICING CARDS */
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    gap: 32px;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 508px;
+    padding: 40px;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    background-color: #fff;
+}
+
+.price-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.c-inner-left {
+    width: 100%;
+    text-align: center;
+}
+
+.user-bill {
+    margin-top: 14px;
+    color: var(--lighter-dark);
+}
+
+
+.features {
+    text-align: center;
+    width: 100%;
+}
+
+.c-feature {
+    color: grey;
+    margin-bottom: 16px;
+}
+
+.card.pro {
+    background: var(--blue);
+    color: white;
+    background-image: url(../assets/home/bg-pattern-pricing.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.card.pro .user-bill {
+    color: #fff;
+}
+
+.card.pro .c-feature {
+    color: #d3dcff;
+}
+
+/* FOOTER */
+
+.bottom {
+    position: relative;
+    background: var(--dark);
+    margin-top: 22%;
+    background-image: url(../assets/home/bg-pattern-footer.svg);
+    background-repeat: no-repeat;
+    background-position: 116% 42%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21.875rem;
+    padding-bottom: 6.25rem;
+    color: #fff;
+}
+
+.countdown .btn-blue {
+    box-shadow: none;
+}
+
+.i-date {
+    letter-spacing: 5px;
+    margin-bottom: 24px;
+}
+
+.date {
+    color: var(--blue);
+}
+
+.times {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.num-time {
+    min-width: 6rem;
+    background-color: #333950;
+    padding: 1.2em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.num-time p {
+    font-weight: 700;
+    color: #999cab;
+}
+
+@media screen and (max-width: 1024px) {
+    .ctr {
+        margin: 0 2.75rem;
+    }
+
+    .hero .hero-headline {
+        max-width: 345px;
+    }
+
+    .hero .hero-img {
+        max-width: 40%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .pricing {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        height: 316px;
+        padding: 3rem;
+        align-items: flex-start;
+    }
+
+    .price-flex {
+        flex-direction: row;
+    }
+
+    .c-inner-left {
+        text-align: left;
+    }
+
+    .bottom {
+        margin-top: 40rem;
+        background-position: center 24%;
+    }
+
+    .countdown {
+        flex-direction: column;
+        gap: 56px;
+        padding-top: 40.625rem;
+        padding-bottom: 5.6875rem;
+    }
+
+    .countdown-time {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .home {
+        background-position: center -11rem;
+        background-size: 30rem;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero-headline {
+        text-align: center;
+    }
+
+    .hero .hero-img {
+        max-width: 60%;
+    }
+
+    .card {
+        height: 508px;
+        align-items: center;
+    }
+
+    .price-flex{
+        flex-direction: column;
+    }
+
+    .c-inner-left {
+        text-align: center;
+    }
+
+    .bottom {
+        margin-top: 55rem;
+        background-position: center 6rem;
+        background-size: 80rem;
+    }
+
+    .countdown {
+        padding-top: 55rem;
+    }
+
+    .num-time {
+        min-width: 2rem;
+        padding: 1em;
+        width: 72px;
+        height: 92px;
+    }
+
+    .num-time h1 {
+        font-size: 32px;
+        line-height: unset;
+    }
+}
